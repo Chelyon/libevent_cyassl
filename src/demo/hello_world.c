@@ -238,7 +238,7 @@ int main(int argc, char **argv)
 							connection_event_cb, 
 							(void *)bev_ssl);
 
-	bufferevent_cyassl_ssl_init(bev_ssl, client_ctx->certpath, "*.tplinkcloud.com");
+	bufferevent_cyassl_ssl_init(bev_ssl, client_ctx->certpath, NULL);
 	bufferevent_cyassl_socket_connect_hostname(bev_ssl, client_ctx->server_host, 
 												client_ctx->server_port);
 
