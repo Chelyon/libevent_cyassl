@@ -16,7 +16,7 @@ will be very helpful to understand it's mechanism.
   The liblevent_cyassl is similar to libevent_openssl, providing APIs to set up ssl connection.
 
 ## samples
-  Please refer to src/demo, which provides a example of how to use libevent_cyassl to set up
+  Please refer to src/demo, which provides an example of how to use libevent_cyassl to set up
 a ssl connection
 
 ## TODO
