@@ -1,6 +1,6 @@
 CFLAGS += -I../libevent_cyassl/include
 LDFLAGS += -levent -lm -lpthread -L../lib/ -levent_cyassl
-TARGET?=messager
+TARGET?=hello_world
 
 all:
 	$(CC) $(CFLAGS) test.c -o $(TARGET) $(LDFLAGS)
