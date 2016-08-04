@@ -8,7 +8,7 @@
  * DESCRIPTION:   	management of cyassl connection, using evbuffer and event
  *					provided by libevent
  *
- * AUTHOR     :		Xiao Chenglin<chenglin.chan@qq.com>
+ * AUTHOR     :		Xiao Chenglin
  * 					
  * CREATE DATE:		04/07/2015
  *
@@ -491,7 +491,6 @@ static int be_cyassl_do_handshake(bufferevent_cyassl_t *bev_ssl)
 	} else {
 		err = CyaSSL_get_error(bev_ssl->ssl, r);
 		CyaSSL_ERR_error_string(err, err_str);
-		printf("state:%d, r:%d, err:%d, %s\n", bev_ssl->state, r, err, err_str);
 
 		switch (err) {
 			case SSL_ERROR_WANT_READ:
