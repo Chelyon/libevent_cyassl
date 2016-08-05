@@ -130,7 +130,7 @@ static int client_ctx_init_option(client_ctx_t *client_ctx,
 		return -1;
 	}
 
-	while ( (opt = getopt_long(argc, argv, "l:p:s:r:c:", 
+	while ( (opt = getopt_long(argc, argv, "s:r:c:", 
 		long_opts, &long_index)) != -1 )
 	{
 		switch (opt) {
