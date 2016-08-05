@@ -31,7 +31,7 @@ static void event_timer_cb(evutil_socket_t fd, short what, void *ctx)
 		  If it's a server program, using evconnlistener provided by libevent for 
 		listening incoming connections will keep event_base loop.
 		  Otherwise, you should add a persist timer to event_base to keep it loop,
-		which is this callback used for.
+		which this callback is used for.
 	 */
 }
 
