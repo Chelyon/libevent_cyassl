@@ -2,8 +2,8 @@
 
 ## description
   The project implements non-blocking cyassl connection module based on libevent, which will 
-help set up a secure ssl conntion much more easily. Besides, it's take up less space than 
-openssl, which makes it reasonable for embed system.
+help set up a secure ssl conntion much more easily. Besides, it takes up less space than 
+openssl, which makes it reasonable to be used for embed system.
 
 ## dependencies
 1. libevent V2
